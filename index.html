@@ -1,1 +1,208 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #2980b9;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            color: #7f8c8d;
+            text-align: right;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-info div a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .contact-info div p {
+            font-size: 14px;
+            color: #34495e;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 28px;
+            color: #34495e;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 35px;
+        }
+        .section h2::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 5px;
+            height: 25px;
+            background-color: #2980b9;
+            transform: translateY(-50%);
+        }
+        .experience, .education {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .experience ul, .education ul, .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience li, .education li, .skills li {
+            padding: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .date {
+            color: #95a5a6;
+        }
+        .description {
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Christian Daniel Barrera Fuentes</h1>
+        <p>Analista de Cumplimiento de Visa</p>
+    </header>
+
+    <div class="contact-info">
+        <div>
+            <p><strong>Email:</strong> Cbarrera408@gmail.com</p>
+            <p><strong>Teléfono:</strong> +502 58798751</p>
+        </div>
+        <div>
+            <p><strong>Dirección:</strong> Ciudad de Guatemala, Guatemala</p>
+            <p><strong>Edad:</strong> 24 años</p> <!-- Aquí agregamos la etiqueta de Edad -->
+        </div>
+        <div>
+            <p><strong>GitHub:</strong> <a href="https://github.com/tuusuario">ChristianBarreraUniversidad.github.io</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Resumen Profesional</h2>
+        <p>Profesional con experiencia en gestion de procesos y atencion al cliente. Con 4 años de experiencia en Soporte tecnico trabajando en tareas relacionadas con sistemas POS como mantenimiento y programacion. Busco nuevas oportunidades para aplicar mi experiencia y seguir creciendo profesionalmente.</p>
+    </div>
+
+    <div class="section experience">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>
+                <span class="job-title">Soporte tecnico sistemas POS</span> en <span class="company">PAYSAFE/span> <span class="date">(2021- 2024</span>
+            </li>
+            <li>
+            <span class="job-title">Analista de Cumplimiento de Normas Visa</span> en <span class="company">PAYSAFE/span> <span class="date">(2024- Actualidad</span>
+            </li>
+            <!-- Repite este bloque para cada experiencia laboral -->
+        </ul>
+    </div>
+
+    <div class="section education">
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                <span class="degree">PrePrimaria</span> en <span class="institution">Colegio Las Flores</span> <span class="date">2006</span>
+            </li>
+            <li>
+                <span class="degree">Primaria</span> en <span class="institution">Colegio Mixto Maria Auxilio de los Cristianos</span> <span class="date">2007 - 2012</span>
+            </li>
+            <li>
+                <span class="degree">Basicos</span> en <span class="institution">Colegio Las Flores</span> <span class="date">2013 - 2015</span>
+            </li>
+            <li>
+                <span class="degree">Bachillerato en Computacion</span> en <span class="institution">Colegio Nuevos Horizontes</span> <span class="date">2016 - 2017</span>
+            </li>
+            <li>
+                <span class="degree">Curso Intensico de Ingles (Finishing School) </span> en <span class="institution">INTECAP</span> <span class="date">2021</span>
+            </li>
+            <li>
+                <span class="degree">Curso de Desarollo Web Completo </span> en <span class="institution">UDEMY</span> <span class="date">2024 - Presente</span>
+            </li>
+            <!-- Repite este bloque para cada título académico -->
+        </ul>
+    </div>
+
+    <div class="section skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <!-- Agrega más habilidades según corresponda -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>Desarrollado por <a href="https://tuportfolio.com">Christian Daniel Barrera Fuentes</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
